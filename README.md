@@ -1,9 +1,8 @@
-test 1
-rebuild
+浪live 抽獎作業
 
-# TODO LIST
+# Lottery_by_Alice
 
-A very simple todo list for trying React 16. A basic boilerplate for using React, Redux, Webpack, etc.
+A LOTTERY PROJECT FOR LANGLIVE. A basic boilerplate for using React, Redux, Webpack, etc.
 
 ## Getting Started
 
@@ -32,4 +31,3 @@ yarn dev
 This will start a mockApi server (port 3000) and a webpack-dev-server (port 8080).
 Go to http://localhost:8080 to view the result.
 
-# Lottery_by_Alice
