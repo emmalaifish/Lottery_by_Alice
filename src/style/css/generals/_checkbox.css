@@ -1,0 +1,30 @@
+.checkbox {
+	position: relative;
+	margin-left: 25px;
+	cursor: pointer;
+	&::before {
+		position: absolute;
+		left: -25px;
+		top: calc(50% - 7px);
+		display: block;
+		width: 12px;
+		height: 12px;
+		content: '';
+		border-radius: 50%;
+		border: 1px solid $color-checkbox;
+	}
+	&:hover,
+	&.checked {
+		&::after {
+			position: absolute;
+			left: -23px; /* -20 + 2 */
+			top: calc(50% - 7px + 2px);
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			content: '';
+			border-radius: 50%;
+			background-color: $color-checkbox;
+		}
+	}
+}

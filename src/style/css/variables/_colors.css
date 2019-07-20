@@ -1,0 +1,38 @@
+/* Two colors for creating gradient */
+$color-background-1: rgb(35, 91, 103);
+$color-background-2: rgb(210, 175, 173);
+
+/* General */
+$color-white: #fff;
+$color-black: #000;
+
+/* Theme color */
+/* Reference: https://www.akulakreative.com/blog/2016/7/an-ocean-sunset-inspired-color-palette */
+$color-theme-1: #007D83; /* TURQUOISE */
+$color-theme-2: #245D68; /* DEEP TURQUOISE */
+$color-theme-3: #4A989A; /* LIGHT TURQUOISE */
+$color-theme-4: #AFB3B4; /* GREENISH-GRAY */
+$color-theme-5: #A49FA5; /* LAVENDER-GRAY */
+$color-theme-6: #D1AEAC; /* PALE PINK */
+
+/* Component - dialog */
+$color-dialog-bg: rgba(35, 91, 103, 0.8);
+
+/* Component - checkbox */
+$color-checkbox: #007D83;
+
+/* Component - lottery */
+$color-lottery: rgba(176, 180, 181, 0.5);
+$color-lottery-focus: rgba(0, 126, 133, 0.5);
+
+/* Component - form and related widgets */
+$color-form-border: rgba(0, 126, 133, 0.5);
+$color-form-error: #ff5151;
+
+/* Home */
+$color-home-task: #245D68;
+$color-home-task-checked: #A49FA5;
+
+$color-home-priority-high: #ff5151;
+$color-home-priority-normal: #ff9224;
+$color-home-priority-low: #d9b300;

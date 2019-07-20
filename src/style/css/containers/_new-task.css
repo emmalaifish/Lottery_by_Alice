@@ -1,0 +1,30 @@
+.new-task {
+	display: flex;
+	justify-content: center;
+	.form-container {
+		width: 600px;
+		padding: 25px;
+		background-color: $color-white;
+		opacity: 0.6;
+	}
+
+	.field {
+		.text {
+			font-size: 20px;
+		}
+
+		.input {
+			font-size: 16px;
+		}
+
+		.checkbox {
+			margin-right: 25px;
+			font-size: 16px;
+		}
+	}
+
+	.submit {
+		font-size: 20px;
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,22 @@
+.icon {
+	display: inline-block;
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    &.icon-search {
+	    background-image: url('../img/icon-search.svg');
+	    width: 20px;
+	    height: 20px;
+	}
+	&.icon-search-active {
+	    background-image: url('../img/icon-search-active.svg');
+	    width: 20px;
+	    height: 20px;
+	}
+	&.icon-close {
+		background-image: url('../img/icon-close.svg');
+	    width: 16px;
+	    height: 16px;
+	}
+}
+

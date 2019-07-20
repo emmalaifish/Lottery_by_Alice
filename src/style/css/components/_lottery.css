@@ -1,0 +1,52 @@
+.lottery-container {
+    border: 2px solid #ccc;
+    padding: 30px;
+    border-radius: 5px;
+    height: 85%;
+    
+    .displayedTime {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+      font-size: 1.5em;
+    }
+
+    button, input[type="submit"] {
+      width: 100%;
+      padding: 20px;
+      margin-bottom: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #bbb;
+      font-size: 1.3em;
+      color: white;
+      cursor: pointer;
+      transition: color 0.3s, background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: rgb(234, 189, 186)
+    }
+
+    input[type="submit"] {
+      background-color: #211a4c;
+    }
+
+    input[type="submit"]:hover {
+      background-color: $color-lottery-focus;
+
+    }
+
+    input[type="text"] {
+      margin-bottom: 30px;
+      padding: 0;
+      font-size: 2em;
+      width: 100%;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #222;
+    }
+
+}
