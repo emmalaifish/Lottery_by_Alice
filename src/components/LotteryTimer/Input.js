@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export default class Input extends Component {
 
-	onSubmit(event) {
+	  onSubmit(event) {
 		event.preventDefault();
 		const strSeconds = this.refs.seconds.value;
 		if(strSeconds.match(/[0-9]/)) {

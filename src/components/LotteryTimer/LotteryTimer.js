@@ -2,7 +2,6 @@ import React, { Component, createRef } from "react";
 
 
 import { Clock } from '../../components';
-import { Input } from '../../components';
 import { Button } from '../../components';
 
 import { Dialog } from '../../portals';
@@ -84,15 +83,26 @@ export default class LotteryTimer extends Component {
           name: ''
         })
       }
-      
+
+      onSecond() {
+        const strSeconds = this.refs.seconds.value;
+        if(strSeconds.match(/[0-9]/)) {
+          this.refs.seconds.value = '';
+          this.handleCountdown(parseInt(strSeconds, 10));
+        }else if(this.state.count !== 0){
+          this.handleStart();
+        }
+      }
+			
       render() {
         const {count} = this.state;
         return (
           <div className="lottery-container">
             <Clock className="counter-style" time={count}/>
-            <Input onSetCountdown={this.handleCountdown.bind(this)}/>
-            <Button label="stop" onClickHandler={this.handleStop.bind(this)}/>
-            <Button label="reset" onClickHandler={this.handleReset.bind(this)}/>
+            <input type="text" ref="seconds" placeholder="enter time in seconds"/>
+            <Button label="start" onClickHandler={this.onSecond.bind(this)} color={'startTime'}/>
+            <Button label="stop" onClickHandler={this.handleStop.bind(this)} color={'otherButton'}/>
+            <Button label="reset" onClickHandler={this.handleReset.bind(this)} color={'otherButton'}/>
             <Dialog ref={this.dialog} />
           </div>
         )

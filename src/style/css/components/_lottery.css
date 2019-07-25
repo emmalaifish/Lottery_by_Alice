@@ -12,7 +12,7 @@
       font-size: 1.5em;
     }
 
-    button, input[type="submit"] {
+    .otherButton {
       width: 100%;
       padding: 20px;
       margin-bottom: 5px;
@@ -25,17 +25,25 @@
       transition: color 0.3s, background-color 0.3s;
     }
 
-    button:hover {
+    button.otherButton:hover {
       background-color: rgb(234, 189, 186)
     }
 
-    input[type="submit"] {
+    .startTime {
       background-color: #211a4c;
+      width: 100%;
+      padding: 20px;
+      margin-bottom: 5px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.3em;
+      color: white;
+      cursor: pointer;
+      transition: color 0.3s, background-color 0.3s;
     }
 
-    input[type="submit"]:hover {
+    button.startTime:hover {
       background-color: $color-lottery-focus;
-
     }
 
     input[type="text"] {
