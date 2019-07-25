@@ -5,9 +5,6 @@ const initialState = fromJS({
 	load: false,
 	loadSuc: false,
 	loadErr: false,
-	add: false,
-	addSuc: false,
-	addErr: false,
 	persons: List(),
 });
 
@@ -33,26 +30,7 @@ export default function person(state = initialState, action = {}) {
 			load: false,
 			loadSuc: false,
 			loadErr: action.error,
-			});
-		case cons.ADD:
-		return state.merge({
-			add: true,
-			addSuc: false,
-			addErr: false,
 		});
-		case cons.ADD_SUCCESS: {
-		return state.merge({
-			add: false,
-			addSuc: true,
-			addErr: false,
-		});
-		}
-		case cons.ADD_FAIL:
-		return state.merge({
-			add: false,
-			addSuc: false,
-			addErr: action.error,
-      });
 	  default:
 	  	return state;
 	}

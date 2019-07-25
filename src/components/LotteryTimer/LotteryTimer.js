@@ -26,8 +26,7 @@ export default class LotteryTimer extends Component {
               this.handleStart();
           }
         }
-
-        if(this.state.name !== prevState.name){
+        if(this.state.name !== ''){
           const options = {
             message: 'Congratulations!!! '+this.state.name+' is the winner!!!',
             confirmBtnText: 'Ok'
@@ -72,18 +71,18 @@ export default class LotteryTimer extends Component {
       }
 
       handleLottery() {
-        //do lottery
         const { datas } = this.props;
-        let random = Math.floor(Math.random() * datas.size);
-        const result = datas.filter(data => {
+        let random = Math.floor(Math.random() * datas.size)+1;
+        datas.filter(data => {
           return data.get('id') === random;
-        })
-        result.map((person) => {
-          //取到人名與id後popup顯示中獎
+        }).map((person) => {//filter出一筆人名與id後popup顯示中獎人
           this.setState({
             name: person.get('name'),
           })
         });
+        this.setState({
+          name: ''
+        })
       }
       
       render() {
